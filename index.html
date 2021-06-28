@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<!-- 
+ 
+    
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial
+   -->
+
+<body class="body-area">
+                              <!-- HEADER SECTION-->
+  <header>
+    <div class="header-div">
+      <h2 class="header-heading">
+        Simple, traffic-based pricing
+      </h2>
+      <div class="header-para">
+        Sign-up for our 30-day trial. No credit card required.
+      </div>
+    </div>
+  </header>
+
+                               <!-- MAIN SECTION-->
+  <main>
+    <div class="container">
+
+                                    <!-- SECTION1 -->
+      <div class="section section1">
+        <div class="first-div first-div1">
+          <span class="pageviews">100</span>k Pageviews
+        </div>
+        <div class="first-div first-div2">
+          <input type="range" min="1" max="1000" value="500" class="slider" >
+        </div>
+        <div class="first-div first-div3">
+          <span class="dollar">$16.00</span><span class="month">  / month</span>
+        </div>
+      </div>
+
+                                    <!-- SECTION2 -->
+      <div class="section section2">
+        <div class="second-div second-div1">Monthly Billing</div>
+        <div class="second-div second-div2">
+          <label class="switch">
+            <input type="checkbox" class="transforming" onclick="practice()">
+            <span class="slider2 round"></span>
+          </label>
+        </div>
+        <div class="second-div second-div3">
+          Yearly Billing <span class="discount">-25% <span class="discount-text">discount</span></span>
+        </div>
+      </div>
+      <hr>
+
+                                    <!-- SECTION3 -->
+      <div class="section section3">
+        <div class="confirm-text">
+          <div class="bottom-text">
+            <span class="check-icons"><img src="images/icon-check.svg" alt="images"></span>
+            Unlimited websites
+          </div>
+        <div class="bottom-text">
+          <span class="check-icons"><img src="images/icon-check.svg" alt="images"></span>
+          100% data ownership
+        </div>
+        <div class="bottom-text">
+          <span class="check-icons"><img src="images/icon-check.svg" alt="images"></span>
+          Email reports
+        </div>
+        </div>
+        <button type="button" class="bottom-btn">Start my trial</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">ProgrammerOwais</a>.
+    </div>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+::after , ::before , * , html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Manrope',sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --var1: hsl(174, 77%, 80%);    /*           Full Slider Bar                     */
+    --var2: hsl(174, 86%, 45%);    /*           Slider Backround                     */ 
+    --var3: hsl(14, 92%, 95%);    /*            Discount Background                        */
+    --var4: hsl(15, 100%, 70%);    /*           Discount Text                     */
+    --var5: hsl(226, 100%, 87%);   /*           CTA Text                       */
+    --var6: hsl (0, 0%, 100%);       /*           Pricing Component Background                    */
+    --var7: hsl(230, 100%, 99%);    /*          Main Background                         */
+    --var8: hsl(224, 65%, 95%);    /*           Empty Slider Bar                        */
+    --var8: hsl(223, 50%, 87%);    /*           Toggle Background                        */
+    --var10:hsl(225, 20%, 60%);    /*           Text                        */
+    --var10:hsl(227, 35%, 25%);    /*           (Text & CTA Background                        */
+}
+
+.body-area {
+    background-color: #fff;
+    background-image: url('images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
+
+/****************************************** HEADER SECTION *************************/
+.header-div {
+    padding: 4rem 0rem;
+    padding-bottom: 1.6rem;
+    background-image: url("images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: 51% 1.9rem;
+    width: 85%;
+    margin: 0.1rem auto;
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+.header-heading {
+    font-family: 'Manrope',sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    margin: 0.1rem;
+    
+}
+
+.header-para {
+    width: 65%;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0.1rem auto;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    
+}
+
+
+/*********************************************MAIN SECTION*********************************/
+
+.container {
+    width: 87%;
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow:       0.5px 0.5px 30px 0px rgba(0, 0, 0, 0.053),
+                     -0.5px 0px 30px 0px rgba(0, 0, 0, 0.053);
+}
+
+.section1 {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.first-div
+ {
+    align-self: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    
+}
+
+.first-div1 {
+    letter-spacing: 2px;    
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.pageviews {
+    font-size: 0.8rem;
+}
+
+/*************************************** range slider portion ***************************/
+
+.first-div2 {
+    width: 96%;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color:var(--var8);
+    
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background-color: var(--var2);
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 3px 10px 20px 7px var(--var1);
+}
+
+
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: hsl(174, 62%, 46%);
+   
+}
+
+.slider::-moz-range-progress {
+    background-color: var(--var1);
+}
+
+.slider::-ms-fill-lower {
+    background-color:var(--var1);
+    
+}
+
+/******************************************* Range slider portion end *************************/
+
+
+
+.first-div3 {
+    padding-top: 2rem;
+    
+    
+}
+
+.month {
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    bottom: 7px;
+    left: 6px;
+}
+
+.dollar {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 2.3rem;    
+    font-weight: 800;
+
+}
+
+/*********************************************** SECTION 2 **********************************/
+
+.section2 {
+    width: 98%;
+    margin: 2rem 0.2rem;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.second-div {
+    margin: 0.1rem 0.3rem;
+    padding: 1px;
+}
+
+.second-div1,.second-div3 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 00.8rem;
+}
+
+
+
+/**************************************** toggle switch *************************/
+
+.switch {
+    position: relative;
+    bottom: 2px;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+    border-radius: 10px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider2 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider2:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    top: 1.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider2 {
+    background-color: #2196F3;
+    background-color: var(--var2);
+  }
+  
+  input:focus + .slider2 {
+    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--var2);
+  }
+  
+  input:checked + .slider2:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(24px);
+  }
+  
+  /* Rounded sliders */
+  .slider2.round {
+    border-radius: 34px;
+  }
+  
+  .slider2.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+  .discount {
+      padding: 3px 8px;
+      background-color: var(--var3);
+      color: var(--var4);
+      border-radius: 30px;
+      font-size: 0.7rem;
+  }
+
+  .discount-text {
+    display: none;
+    background-color: var(--var3);
+    color: var(--var4);
+    font-size: 0.7rem;
+
+  }
+/*********************************************** SECTION 2 END **********************************/
+
+
+  hr {
+      margin: 1rem 0;
+      margin-top: 2rem;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.161);
+      height: 1px;
+      
+  }
+
+/************************************************* SECTION 3 ************************************/
+
+
+   .section3 {
+       width: 96%;
+       margin: 0 auto;
+       margin-top: 1.5rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+   }
+  .confirm-text {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+  }
+
+  .bottom-text {
+      margin: 0.1rem 0.1rem;
+      padding: 1px;
+      align-self: center;
+      color:rgba(0, 0, 0, 0.5);
+      font-size: 0.8rem;
+      font-weight: 800;
+  }
+
+  .check-icons {
+      margin: 0 0.1rem;
+      padding: 0 10px;
+  }
+
+  .bottom-btn {
+      margin-top: 1.6rem;
+      width: auto;
+      background-color: var(--var10);
+      padding: 13px 40px;
+      border-radius: 30px;
+      outline: none;
+      border: none;
+      margin-left: 1.5rem;
+      color: rgba(255, 255, 255, 0.803);
+      font-weight: 800;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: transform 0.1s;
+      margin-bottom: 2rem;
+
+  }
+
+  .bottom-btn:hover , .bottom-btn:focus {
+      color: white;
+      transform: scale(1.1);
+  }
+
+
+
+/********************************************* DESKTOP SEZE **************************************/
+
+
+@media (min-width:1100px) {
+
+    .header-div {
+        padding-bottom: 2.5rem;
+    }
+
+    .header-heading {
+        font-size: 1.7rem;
+    }
+
+    /********************* MAIN SECTION ***************************/
+
+    .container {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    /*************************************** SECTION 1 *****************************/
+    .section1 {
+        width:85% ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first-div1 {
+        font-size: 1.2rem;
+        order: 0;     
+        width: 45%;
+
+    }
+    .pageviews {
+        font-size: 1.2rem;
+    }
+    .first-div2 {
+        order: 2;       
+        width: 100%;
+    }
+    .first-div3 {
+        justify-self: center;
+        order: 1; 
+        width: 45%;
+
+    }
+
+
+    .dollar , .month {
+        position: relative;
+        bottom: 12px;
+    }
+
+    .month {
+        font-size: 1.1rem;
+        bottom: 25px;
+    }
+    .dollar {
+        font-size: 2.6rem;
+    }
+
+
+/*************************************** SECTION 2 *****************************/
+
+.section2 {
+    margin-top: 3rem;
+}
+
+.discount-text {
+    display: inline;
+}
+
+.discount {
+    margin-left: 0.5rem;
+}
+
+.second-div1 ,.second-div2, .second-div3{
+    padding: 2px 4px;
+    font-size: 1rem;
+}
+
+.second-div3 {
+    margin-right: 2.8rem;
+}
+
+/******************************** SECTION 3 ********************************/
+
+.section3 {
+    width: 86%;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.confirm-text {
+    margin-bottom: 1.5rem;
+}
+
+.bottom-text {
+    align-self: flex-start;
+    font-size: 0.9rem;
+}
+.bottom-btn {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+    margin-right: 0.2rem;
+}
+
+.check-icons {
+    padding-left: 1px;
+} 
+
+}
+
